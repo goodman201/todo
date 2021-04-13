@@ -1,0 +1,35 @@
+<%- contentFor('body') %>
+
+<div class="container_register">
+    <div class="register_form">
+        <form id="signIn">
+            <span class="name_form">Login</span>
+            <span class="error" id="errorAuth"></span>
+            <div class="input">
+                <label>E-mail</label>
+                <i class="fa fa-envelope icon"></i>
+                <input class="email" type="text" id="email" name="email" placeholder="Type your e-mail">
+                <span class="error"></span>
+            </div>
+            <div class="input">
+                <label>Password</label>
+                <i class="fa fa-lock icon"></i>
+                <input class="password" type="password" id="password" name="password" placeholder="Type your password">
+                <span class="error"></span>
+            </div>
+            <div>
+                <button type="submit" class="btn">Sign in</button>
+            </div>
+            <div class="text_using">
+                <span>Or Sign Up Using</span>
+            </div>
+            <div class="sign_up_using">
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="google"><i class="fa fa-google"></i></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/scripts/signin.js"></script>

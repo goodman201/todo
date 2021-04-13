@@ -1,0 +1,120 @@
+@media only screen and (max-width: 1920px) {
+
+}
+
+@media only screen and (max-width: 1680px) {
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        overflow-x: auto;
+        margin-right: -9%;
+        height: 78%;
+    }
+    .heading-column span{
+
+    }
+
+    .page-header{
+
+        display: none;
+    }
+
+    .task_ul {
+        width: 270%;
+        height: 100%;
+    }
+
+    .todos {
+        width: 32%;
+        display: inline-block;
+        height: 100%;
+    }
+    .column{
+
+        width: 100%;
+
+        height: calc(100% - 60px);
+
+    }
+    .center-container{
+
+        width: 100%;
+
+    }
+    .page-footer{
+
+        position: fixed;
+
+        display: flex;
+
+        bottom: 0;
+
+        left: 0;
+
+        justify-content: center;
+
+        width: 100%;
+
+        padding: 15px 0;
+
+        background: #fff;
+
+    }
+    .addTaskModal {
+        padding: 10px 25px;
+        border-radius: 100%;
+        font-size: 53px;
+        font-weight: bold;
+        display: flex;
+    }
+
+    .modal .modal_content{
+        width: 90%;
+        /* height: 70%; */
+        margin-top: 130px;
+    }
+    .modal .content .addTodo{
+        margin: 0 25%;
+        /* display: inline-block; */
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 533px) {
+}
+
+@media only screen and (max-width: 360px) {
+}
+
+@media only screen and (max-width: 320px) {
+}
+
+@media only screen and (max-width: 240px) {
+}
+
+@media only screen and (max-width: 176px) {
+}
+
+@media all and (orientation: landscape) {
+    /* CSS правила для устройства в альбомном режиме */
+}
+
+@media all and (orientation: portrait) {
+    /* CSS правила для устройства в портретном режиме */
+}

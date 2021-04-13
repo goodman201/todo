@@ -1,0 +1,135 @@
+.container_register{
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+}
+.register_form{
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0 120px 40px;
+    width: 500px;
+    background: #fff;
+}
+
+.register_form .input{
+    margin: 0 0 35px 0;
+    display: block;
+}
+
+.name_form{
+    display: block;
+    margin: 50px 0 50px 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.input input{
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    padding: 0 7px 0 43px;
+    border: none;
+    border-bottom: groove;
+    margin: -20px 0 0 0;
+}
+
+.icon{
+    position: relative;
+    top: 17px;
+    left: 10px;
+}
+
+
+.container_register label{
+    margin: 0 0 0px 10px;
+    font-size: 14px;
+    color: #666666;
+    display: block;
+}
+
+.btn{
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    margin: 0 0 35px 0;
+}
+
+.error{
+    color: #ff0000;
+    font-size: 12px;
+}
+.text_using{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+    margin: 0 0 50px 0;
+}
+
+.sign_up_using{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_up_using a{
+    font-size: 25px;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.facebook{
+    background-color: #3b5998;
+    color: #ffffff;
+}
+
+.twitter{
+    background-color: #1da1f2;
+    color: #ffffff;
+
+}
+
+.google{
+    background-color: #ea4335;
+    color: #ffffff;
+
+}

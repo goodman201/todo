@@ -1,0 +1,96 @@
+<%- contentFor('body'); %>
+<% if (user) { %>
+    <div class="page-header">
+        <button class="addTaskModal">Add task</button>
+    </div>
+
+    <div class="task_ul">
+        <div class=" todos">
+            <span class="heading-column">ToDo</span>
+            <ul class="column" id="TODO">
+                <% tasks_todo.forEach(function(task) { %>
+                    <li id="<%= task.id; %>">
+                        <article class="title portlet-header">
+                            <p><%= task.title; %></p><i class="collapse rotate"></i>
+                        </article>
+                        <div class="description hidden"><span class="text-description"><%= task.description; %></span><i
+                                    class="delete"></i></div>
+                        <span class="priority"><%= task.importance; %></span>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+
+        <div class="todos">
+            <span class="heading-column">InProgress</span>
+            <ul class="column" id="IN_PROGRESS">
+                <% tasks_inprogress.forEach(function(task) { %>
+                    <li id="<%= task.id %>">
+                        <article class="title portlet-header">
+                            <p><%= task.title; %></p><i class="collapse rotate"></i>
+                        </article>
+                        <div class="description hidden"><span class="text-description"><%= task.description; %></span><i
+                                    class="delete"></i></div>
+                        <span class="priority"><%= task.importance; %></span>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+
+        <div class="todos">
+            <span class="heading-column">DONE</span>
+            <ul class="column" id="DONE">
+                <% tasks_done.forEach(function(task) { %>
+                    <li id="<%= task.id %>">
+                        <article class="title portlet-header">
+                            <p><%= task.title; %></p><i class="collapse rotate"></i>
+                        </article>
+                        <div class="description hidden"><span class="text-description"><%= task.description; %></span><i
+                                    class="delete"></i></div>
+                        <span class="priority"><%= task.importance %></span>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+
+    <div id="my_modal" class="modal">
+        <form class="content modal_content" id="todoAdd">
+            <label>* Title
+                <input type="text" name="title" id="title">
+                <span class="error"></span>
+            </label>
+            <label>* Description
+                <textarea name="description" id="description"></textarea>
+                <span class="error"></span>
+            </label>
+            <p>Select the degree of importance:</p>
+            <div class="importance">
+                <label for="high">High</label>
+                <input type="checkbox" id="high" name="priority" value="HIGH">
+                <label for="average">Average</label>
+                <input type="checkbox" id="average" name="priority" value="AVERAGE">
+
+                <label for="low">Low</label>
+                <input type="checkbox" id="low" name="priority" value="LOW">
+            </div>
+            <div class="button_add">
+                <button type="submit" class="addTodo" id="addTodo">
+                    Add TODO
+                </button>
+            </div>
+            <span class="close_modal_window">×</span>
+        </form>
+    </div>
+    <div class="page-footer">
+        <button class="addTaskModal">+</button>
+    </div>
+<% } else { %>
+    <div></div>
+<% } %>
+
+<script src="/scripts/jquery.ui.touch-punch.min.js"></script>
+
+<script src="/scripts/todo.js"></script>
+
+

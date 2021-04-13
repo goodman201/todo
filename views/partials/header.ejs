@@ -1,0 +1,24 @@
+<header class="header">
+    <div class="navbar">
+        <a href="/" class="logo">
+            <h1 class="name-logo">ToDo</h1>
+        </a>
+        <% if (user) { %>
+            <div class="login dropdown">
+                <button class="dropbtn">Hello, <%= user.name ;%></button>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fa fa-wrench"></i>Settings</a>
+                    <a href="#"><i class="fa fa-lock"></i>Change password</a>
+                    <a href="/auth/logout"><i class="fa fa-sign-out"></i>Log out</a>
+                </div>
+            </div>
+        <% } else { %>
+            <div class="login">
+                <ul>
+                    <li class="sign_in"><a href="/auth/login">Sign in</a></li>
+                    <li class="sign_up"><a href="/auth/register">Sign up</a></li>
+                </ul>
+            </div>
+        <% } %>
+    </div>
+</header>
